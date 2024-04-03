@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:portfolio_app/portfolio_page.dart';
+import 'package:portfolio_app/car_rental.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
 			debugShowCheckedModeBanner: false,
 			routes: {
 				'/PortfolioPage': (context) => const PortfolioPage(),
+				'/CarRental': (context) => const CarRental(),
 			}
     );
   }
@@ -49,6 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget> [
 						_pageMoveButton('/PortfolioPage', context),
+						const SizedBox(height: 10),
+						_pageMoveButton('/CarRental', context)
           ],
         ),
       ),
