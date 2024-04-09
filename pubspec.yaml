@@ -29,6 +29,7 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   font_awesome_flutter: ^10.7.0
+  dots_indicator: ^2.1.1
 
   flutter:
     sdk: flutter
@@ -67,6 +68,8 @@ flutter:
     - assets/images/map.jpeg
     - assets/images/challenger.png
     - assets/images/mustang.png
+    - assets/images/news1.JPG
+    - assets/images/KoreanWar.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

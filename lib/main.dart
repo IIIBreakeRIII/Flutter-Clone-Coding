@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:portfolio_app/portfolio_page.dart';
 import 'package:portfolio_app/car_rental.dart';
+import 'package:portfolio_app/news_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
 			routes: {
 				'/PortfolioPage': (context) => const PortfolioPage(),
 				'/CarRental': (context) => const CarRental(),
+				'/NewsPage': (context) => const NewsPage(),
 			}
     );
   }
@@ -53,7 +55,9 @@ class _MyHomePageState extends State<MyHomePage> {
           children: <Widget> [
 						_pageMoveButton('/PortfolioPage', context),
 						const SizedBox(height: 10),
-						_pageMoveButton('/CarRental', context)
+						_pageMoveButton('/CarRental', context),
+						const SizedBox(height: 10),
+						_pageMoveButton('/NewsPage', context)
           ],
         ),
       ),
